@@ -8,3 +8,6 @@ org_2023
 org_2023.head()
 innings_2023 = org_2023.sort_values(by= 'Innings', ascending = False).head(50)
 innings_2023
+sixes_2023 = org_2023.sort_values(by = '6s', ascending = False).head(16)
+sixes_2023_filtered = sixes_2023[['Player Name','Team Name','6s']]
+sixes_2023_filtered
